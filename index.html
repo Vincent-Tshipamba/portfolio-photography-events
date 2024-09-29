@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photographie Événementielle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Photographie Événementielle</h1>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2>Capturez vos moments les plus précieux</h2>
+            <p>Nous offrons des services de photographie professionnelle pour tous vos événements : mariages,
+                anniversaires, et bien plus.</p>
+            <a href="#portfolio" class="cta-btn">Voir notre portfolio</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="services">
+            <h2>Nos Services</h2>
+            <div style="display: flex;">
+                <div class="card">
+                    <div class="service">
+                        <h3>Mariages</h3>
+                        <p>Immortalisez le plus beau jour de votre vie avec des photos professionnelles et émouvantes.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="service">
+                        <h3>Anniversaires</h3>
+                        <p>Gardez un souvenir inoubliable de vos célébrations en famille ou entre amis.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="service">
+                        <h3>Événements d'entreprise</h3>
+                        <p>Nous couvrons vos événements professionnels avec élégance et discrétion.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <section id="portfolio">
+                <h2>Notre Portfolio</h2>
+                <div class="gallery">
+                    <img src="photo_mariage.jpg" alt="" width="100">
+                    <img src="anniversaire.jpg" alt="" width="100">
+                    <img src="entreprise-event.jpg" alt="" width="100">
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <div class="contact-container">
+                    <div class="contact-image">
+                        <img src="photographie.jpg" alt="Image de photographie" />
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <h2>Contactez-nous</h2>
+                        <p>Si vous avez des questions ou souhaitez réserver nos services, n'hésitez pas à nous
+                            contacter.</p>
+
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nom</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Votre email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Objet</label>
+                                <input type="text" id="subject" name="subject" placeholder="Objet de votre message"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Votre message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Photographie Événementielle - Tous droits réservés</p>
+    </footer>
+</body>
+
+</html>
