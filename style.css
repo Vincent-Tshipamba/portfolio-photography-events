@@ -23,6 +23,7 @@ header {
     justify-content: center;
     text-align: center;
     padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 nav {
@@ -52,6 +53,15 @@ nav ul li a {
 
 nav h1 {
     color: white;
+}
+
+.container {
+    padding: 0.2%;
+    /* Ajoute un padding de 5% des deux côtés */
+    max-width: 1200px;
+    /* Définit une largeur maximale pour que le contenu ne soit pas trop large */
+    margin: 0 auto;
+    /* Centre le conteneur */
 }
 
 .hero {
@@ -90,6 +100,7 @@ nav h1 {
 section {
     padding: 50px 20px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 #services {
@@ -108,7 +119,6 @@ section {
 
 .card {
     width: 500px;
-    margin-right: 45px;
     padding: 50px;
     border: 1px solid #ddd;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -116,7 +126,7 @@ section {
 }
 
 .card:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 .service h3 {
@@ -126,8 +136,9 @@ section {
 
 .gallery {
     display: flex;
-    justify-content: center;
-    gap: 45px;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 30px;
 }
 
 .gallery img {
@@ -142,15 +153,19 @@ section {
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    width: 100%;
     margin: 50px auto;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contact-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #1e3a8a; /* Utilise une couleur cohérente avec la barre de navigation */
+    color: #1e3a8a;
+    /* Utilise une couleur cohérente avec la barre de navigation */
 }
 
 .contact-section p {
@@ -190,7 +205,8 @@ section {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #1e3a8a; /* Ajoute une couleur de focus agréable */
+    border-color: #1e3a8a;
+    /* Ajoute une couleur de focus agréable */
     outline: none;
 }
 
@@ -206,20 +222,14 @@ section {
 }
 
 .submit-btn:hover {
-    background-color: #4b6cb7; /* Couleur plus claire au survol */
-}
-
-.contact-section {
-    padding: 50px;
-    max-width: 1200px;
-    margin: 50px auto;
+    background-color: #4b6cb7;
+    /* Couleur plus claire au survol */
 }
 
 .contact-container {
     display: flex;
     align-items: center;
     gap: 30px;
-    /* Espace entre l'image et le formulaire */
 }
 
 .contact-image {
@@ -227,7 +237,8 @@ section {
 }
 
 .contact-image img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -237,6 +248,7 @@ section {
     background-color: #f9f9f9;
     padding: 40px;
     border-radius: 10px;
+    max-width: 500px;
 }
 
 .contact-form-wrapper h2 {
@@ -253,6 +265,7 @@ section {
 
 .contact-form {
     display: flex;
+    margin-bottom: 15px;
     flex-direction: column;
     gap: 15px;
 }
@@ -261,6 +274,7 @@ section {
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-bottom: 15px;
 }
 
 .form-group label {
@@ -289,7 +303,7 @@ section {
 .submit-btn {
     background-color: #1e3a8a;
     color: white;
-    padding: 15px;
+    padding: 10px 20px;
     font-size: 1.2rem;
     border: none;
     border-radius: 5px;
